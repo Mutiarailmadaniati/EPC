@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>EPC website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="styles.css"> 
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet"><!-- Icons -->
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/44c26c1d6e.js" crossorigin="anonymous"></script>
+   <!-- google-map func -->
+    <script function myMap() {
+      var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap" mapProp));
+      }> </script>
+
+      <link rel="icon" type="image/png" href="images/logo3.png"/>
+   <!-- js reviews carousel -->
+      <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+  </head>
+  
+  <body>
+
+    <!--navigation bar-->
+    
+    <section id="navbar">
+      <nav class= "navbar navbar-expand-lg navbar-light">
+    <!-- logo3 -->
+        <a class="navbar-brand" href=""><img src="images/logo3.png" style="height: 100px; width: 100px;" alt=""></a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#AboutUs">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#WhyUs">Level</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#AboutMyself">WhyEPC</a>
+                    </li>
+                    <!---<li class="nav-item">
+                      <a class="nav-link" href="#Testimonials">Testimonials</a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Contacts">Contacts</a>
+                    </li>
+                </ul>
+        </div>
+      </nav>
+    </section>
+
+    
+ <!--carousel-->
+       <section id="carouselExampleIndicators" class="carousel slide" data-ride="false">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+<!-- carousel items -->
+            <div class="carousel-inner">
+              <div class="moto">
+                <h1 id="slogan">Lembaga Kursus Bahasa Inggris <br> ENGLISH PLUS CONVERSATION (EPC)</h1>
+              </div>
+                <div class="carousel-item active" style="width: 100%;" data-ride="false">
+                    <img class="d-block w-100 " src="images/1.jpg" alt="First slide";>
+                </div>
+                <div class="carousel-item" style="width: 100%;">
+                    <img class="img d-block w-100 " src="images/2.jpg" alt="Second slide";>
+                </div>
+                <div class="carousel-item" style="width: 100%;">
+                    <img class="img d-block w-100 " src="images/6.jpg" alt="Third slide";>
+                </div>
+            </div>
+<!-- carousel forward buttons -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+     </section>
+
+     <!-- <hr class="hlTop"/> -->
+    
+<!--section 1 About Us-->
+    <section id="AboutUs">
+      <div class="container">
+            <h2>AboutUs</h2>
+            <div class="icon"><i class="fas fa-grip-lines"></i></div>
+            <p>English Plus Conversation adalah lembaga kursus berbicara Bahasa Inggris yang berfokus pada keterampilan berbicara (speaking) secara aktif dan percaya diri dengan pembelajaran 70% berbicara dan 30% menulis. Kami melayani berbagai kalangan mulai dari siswa SD, SMP, SMA, mahasiswa, karyawan, hingga masyarakat umum yang ingin meningkatkan kemampuan berbicara bahasa Inggris mereka. EPC hadir sebagai solusi tepat bagi masyarakat yang ingin mengasah kemampuan Berbahasa Inggris.</p>
+      </div>  
+    </section>
+
+    <!-- <hr class="hlBottom"/> -->
+
+<!-- section 2 Why Us -->
+  <section id="WhyUs">
+      <div class="containerColor">
+        <h2>Level</h2>
+        <div class="icon" id="iconWhyWe">
+          <i class="fas fa-grip-lines"></i>
+        </div>
+<p>Pembelajaran di EPC ditempuh melalui 3 level, yaitu: </p>
+      <!-- one row,four columns -->
+      <div class="container-whyUs">
+
+        <!-- column one -->
+        <div class="card-whyUs">
+          <div class="card-img-whyUs">
+            <img src="images/why-us-1.JPG"  style="width: 100%; height: 180px;" alt="дети на уроке английского">
+          </div>
+
+          <div class="whyUs-h4">
+            <h3>Forming methods (Tahap Pembentukan)</h3>
+          </div>
+
+          <div class="whyUs-p">
+            <p> 1.Perkenalan dengan Bahasa Inggris (introduction)</p>
+            <p>2.Basic Grammar Bahasa Inggris: 
+                <br>a.	Simple present & simple continuous tense
+                <br>b.	Time
+                <br>c.	Numbers
+          <span id="dots1">...</span> <span id="more1"> 
+            <br>d.	Pemahaman perbedaan verbs dan adjectives             
+            <br><br>3.Menerjemahkan teks Bahasa Indonesia ke Bahasa Inggris by speaking
+          </span>   </p> 
+          </div>
+
+          <button class="readMoreBtn" onclick="readMoreClick(1)" id="myBtn1">Read more</button> 
+        </div>
+
+        <!-- column two -->
+         <div class="card-whyUs">
+            <div class="card-img-whyUs">
+              <img src="images/why-us-2.JPG"  style="width: 100%; height: 180px;" alt="дети на уроке английского">
+            </div>
+          
+            <div class="whyUs-h4">
+              <h3>Practice Methods (Tahap Pelatihan)</h3>
+            </div>
+
+          <div class="whyUs-p">
+            <p>1.Pembelajaran 50% berbahasa Indonesia 50% berbahasa Inggris</p>
+            <p>2.Free talk (Asking & answering question)</p>
+            <p>3.Praktek percakapan (conversation)</p>
+            <span id="dots2">...</span> <span id="more2">  4.Basic grammar:
+                <br>a.	Simple present & simple continuous tense
+                <br>b.	Simple past tense
+                <br>c.	Reading texts 
+                <br>d.	Translating texts)
+                </span> </p>  
+          </div>
+
+          <button class="readMoreBtn" onclick="readMoreClick(2)" id="myBtn2">Read more</button>
+        </div>
+
+        <!-- column three -->
+        <div class="card-whyUs">
+          <div class="card-img-whyUs">
+            <img src="images/why-us-3.jpg"  style="width: 100%; height: 180px;" alt="дети на уроке английского">
+          </div>
+          
+          <div class="whyUs-h4">
+            <h3>Advanced 1 Methods (Tahap Pelancaran) </h3>
+          </div>
+
+          <div class="whyUs-p">
+            <p>1. Pembelajaran 100% berbahasa Inggris</p>
+            <p>
+              2. Penyempurnaan basic grammar:
+              <br>a. Simple present & simple continuous tense
+              <br>b. Simple past
+              <br>c. Simple future tense
+              <span id="dots3">...</span>
+              <span id="more3" >
+                <br>d. Simple perfect tense
+                <br>e. Peningkatan vocabulary
+              <br>              <br>
+              3. Public speaking/pelatihan debat berbahasa Inggris.
+            
+              </span>
+            </p>
+            
+          </div>
+
+          <button class="readMoreBtn" onclick="readMoreClick(3)" id="myBtn3">Read more</button>
+        </div>
+
+        </div>
+      </div>
+    
+</section>
+
+<!-- scroll back to top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+<!-- section3 About myself -->
+<section id="PracticeMethods">
+  <div class="container">
+    <h2>WhyEPC</h2>
+    <div class="icon"><i class="fas fa-grip-lines"></i></div>
+    <div class="text">
+      <p>
+        Melalui program yang dirancang secara bertahap dan menyenangkan, 
+        EPC berkomitmen untuk menjadi tempat belajar yang mendukung 
+        perkembangan kemampuan bicara dalam bahasa Inggris untuk semua usia 
+        dan latar belakang. Dengan pendekatan praktis dan suasana belajar 
+        yang komunikatif, EPC hadir untuk membantu setiap peserta didik 
+        menguasai bahasa Inggris sebagai alat komunikasi sehari-hari maupun profesional.
+      </p> 
+
+      <h3>Keunggulan Belajar di EPC:</h3>
+      <ul>
+        <li>Ruang kelas ber-AC dan sofa</li>
+        <li>Tutor yang ramah dan menyenangkan</li>
+        <li>Pembelajaran yang aktif dan interaktif</li>
+        <li>Fasilitas belajar pendukung (proyektor & perangkat audio)</li>
+        <li>Jaminan untuk orangtua bahwa anaknya pasti bisa berbicara Bahasa Inggris (show off)</li>
+      </ul>
+
+      <h3>Praktik Berbicara dengan Bule / Native Speaker:</h3>
+      <ul>
+        <li>Mendatangkan Native Speaker ke EPC setiap 3 bulan</li>
+        <li>Praktik berbicara Bahasa Inggris dengan Native Speaker di tempat wisata</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- section 4 Testimonials--> 
+<!-- <section>
+  <h2>Отзывы</h2>
+  <div class="testimonial">
+    <div class="small-container">
+      <div class="row">
+
+        <div class="col-3">  
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+          </svg>    
+          <p>"Как же я рада, что Платон посещает эту школу! С такой душой проходят уроки! А новогодние занятия, это вообще сказка!👍"</p>
+          <div class="rating">
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+          </div>
+          <img src="#" alt="">
+          <p class="testimoninial-name">Мама Платона</p>
+        </div>
+
+        <div class="col-3"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+          </svg>     
+          <p>"Вся наша семья очень любит нашего преподавателя английского языка, нам очень важна была именно такая система и такой подход к обучению и деткам."</p>
+          <div class="rating">
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+          </div>
+          <img src="#" alt="">
+          <p class="testimoninial-name">Семья Ивановых</p>
+        </div>
+
+        <div class="col-3">  
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+          </svg>    
+          <p>"Наша любимая школа которую мы посещаем уже много лет! У нас очень дружный класс детей, которые с удовольствием спешат на занятия!"</p>
+          <div class="rating">
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+          </div>
+          <img src="#" alt="">
+          <p class="testimoninial-name">Ирина Лескова</p>
+        </div>
+
+        <div class="col-3"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+          </svg>     
+          <p>"Сын с удовольствием посещает занятия в Вашей студии, а полученные знания просто поражают."</p>
+          <div class="rating">
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+          </div>
+          <img src="#" alt="">
+          <p class="testimoninial-name">Мария Пирогова</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>   --> 
+    
+    
+     
+<!-- section 5 Social Media, Contact -->
+  <section id="contacts">
+    <div class="container"> 
+      <h2>Contacts</h2>
+      <div class="icon"><i class="fas fa-grip-lines"></i></div>               
+                        
+               <!-- google map code--> 
+              <div class="mapouter">
+                <div class="gmap_canvas">    
+                  <iframe
+                    src="https://www.google.com/maps?q=-7.070617320018962,110.3082142926999&z=16&output=embed"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>                                 
+                </div>
+              </div>
+              <p>Jl. Jatisari Indah I No.16 Blok A1, Jatisari, Mijen, Semarang City, Central Java 50215</p>
+            </div>
+      
+   </section>
+   <section>
+     <div class="footer">
+       <div class="container">
+         <div class="row">
+
+           <div class="footer-col-1">
+            <h3>Bantu Tingkatkan Situs</h3>
+            <p>Jika menemukan kesalahan, sorot bagian teks yang salah lalu tekan Ctrl+Enter.</p>
+          </div>
+          <div class="footer-col-2">
+            <img src="./images/logo5.png" alt="">
+            <p>Pusat Pelatihan «English Plus Conversation»  
+            Tunggu apa lagi? Ayo, buruan daftarkan diri kamu ke English Plus Conversation, and make English as your second language with us!</p>
+          </div>
+          
+          <div class="footer-col-4">
+            <h3>Sosial Media</h3>   
+            <ul>
+              <li><a href="https://www.instagram.com/english.p.conversation?igsh=MXVhZDBxODk3NGhiMA==" class="fa fa-instagram"></a>Instagram</li>
+              <li><a href="#" class="fa fa-youtube"></a>Youtube</li>
+              <li><a href="https://www.facebook.com/share/1YV3G7sHfg/" class="fa fa-facebook"></a>Facebook</li>
+              <li><a href="https://api.whatsapp.com/send/?phone=6281226826730&text&type=phone_number&app_absent=0" class="fab fa-whatsapp-square"></a>What's app</li>
+            </ul>         
+          </div>
+         </div>
+         <hr>
+         <p class="copyright">© 2025</p>
+       </div>
+     </div>
+
+   </section>
+    
+    <script src="index.js"></script>
+
+    </body>
+</html>
+
